@@ -1,0 +1,16 @@
+---
+  - hosts: all
+    become: runas
+    roles:
+#      - { role: snapcreate, when: ( ansible_distribution == "Ubuntu" ) or
+#                                  ( ansible_distribution == "Debian" ) or
+#                                  ( ansible_distribution == "CentOS" ) or
+#                                  ( ansible_distribution == "Amazon" ) or
+#                                  ( ansible_distribution == "RedHat" ) }
+      - { role: windows_update, when: ( inventory_hostname != "localhost") }
+    vars:
+      reboot_ok: true
+
+#ansible_hostname != "testicle"
+# How to run
+# ansible-playbook -b -u <user> --private-key <path to key> -i hosts -l <host-group> main.yml [--extra-vars reboot_ok=true]

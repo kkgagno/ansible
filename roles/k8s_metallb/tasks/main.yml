@@ -1,0 +1,22 @@
+- name: Check if metallb is running
+  shell: "kubectl get namespace |grep metallb-system"
+  register: running_process
+  ignore_errors: yes
+  #failed_when: running_process.rc < 1
+- debug:
+    msg: "Metallb is running"
+  when: running_process.stdout_lines|length > 0
+  ignore_errors: yes
+- meta: end_host
+  when: running_process.stdout_lines|length > 0
+  ignore_errors: yes
+
+
+
+- name: Install Metallb config yaml
+  become: yes
+  shell: "{{ item }}"
+  with_items:    
+    - "kubectl wait --for=condition=Ready pods --all -n metallb-system --timeout 480s"
+    - "kubectl apply -f metallb.yaml"
+

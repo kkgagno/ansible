@@ -1,0 +1,28 @@
+- name: Import vars
+  run_once: yes
+  include_vars:
+          file: vars.yml
+          name: vardata
+
+
+- name: Run Inventory
+  shell: |
+          gcloud asset search-all-resources --scope='folders/862509015527' --asset-types='compute.googleapis.com/Project' --order-by='createTime' |grep displayName >ansible.gcp.yml
+          sed -i 's/displayName: / - /g' ansible.gcp.yml
+          sed -i '1s/^/projects: \n/' ansible.gcp.yml
+          sed -i '1s/^/plugin: gcp_compute\n/' ansible.gcp.yml
+          sed -i -e '$a\''auth_kind: serviceaccount' ansible.gcp.yml
+          sed -i -e '$a\''service_account_file: $HOME/ansible/sc.json' ansible.gcp.yml
+          ansible-inventory --list -i ansible.gcp.yml > allinv.json
+          python3 inv.py
+          tr < inventory.csv -d '\000' > inventory2.csv
+          tr <disks.csv -d '\000' > disks2.csv
+          bq load --project_id=test-ground-403314 --source_format=CSV --autodetect --replace inventory.inventory inventory2.csv
+          bq load --project_id=test-ground-403314 --source_format=CSV --autodetect --replace inventory.disks disks2.csv
+          rm servers.txt
+          rm ansible.gcp.yml
+          rm inventory.csv
+          rm inventory2.csv
+          rm disks.csv
+          rm disks2.csv
+          rm allinv.json

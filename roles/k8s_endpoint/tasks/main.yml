@@ -1,0 +1,64 @@
+- name: Import vars
+  run_once: yes
+  include_vars:
+    file: k8svars.yml
+    name: vardata
+
+- name: Install nginx-core
+  apt:
+    name:  nginx-core
+    state: present
+    update_cache: true
+  
+- name: Remove default nginx.conf (delete file)
+  ansible.builtin.file:
+    path: "/etc/nginx/nginx.conf"
+    state: absent
+
+- name: Create nginx.conf on host
+  file:
+      path: "/etc/nginx/nginx.conf"
+      state: touch
+    
+- name: nginx.conf add block of lines
+  blockinfile:
+    path: "/etc/nginx/nginx.conf"  
+    state: present
+    block: |
+      user www-data;
+      worker_processes auto;
+      pid /run/nginx.pid;
+      include /etc/nginx/modules-enabled/*.conf;
+
+      events {
+             worker_connections 768;
+            # multi_accept on;
+      }
+
+
+      stream {
+         upstream stream_backend {
+             least_conn;
+             server {{ vardata.controlplane1 }}:6443;
+             server {{ vardata.controlplane2 }}:6443;
+             server {{ vardata.controlplane3 }}:6443;
+          }
+    
+         server {
+             listen        6443;
+             proxy_pass    stream_backend;
+             proxy_timeout 3s;
+             proxy_connect_timeout 1s;
+          }
+      }
+
+- name: Restart nginx with new config file
+  become: yes
+  shell: "{{ item }}"
+  with_items:    
+    - "service nginx restart"
+    - "service nginx status"
+  register: command_output
+#- debug:
+#    msg: 
+#      - "{{ command_output.stdout }}"
