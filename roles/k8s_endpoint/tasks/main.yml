@@ -4,6 +4,20 @@
     file: k8svars.yml
     name: vardata
 
+- name: Check if nginx is running
+  shell: "kubectl get namespace |grep nginx"
+  register: running_process
+  ignore_errors: yes
+  #failed_when: running_process.rc < 1
+- debug:
+    msg: "NGINX is running"
+  when: running_process.stdout_lines|length > 0
+  ignore_errors: yes
+- meta: end_host
+  when: running_process.stdout_lines|length > 0
+  ignore_errors: yes
+  
+
 - name: Install nginx-core
   apt:
     name:  nginx-core
