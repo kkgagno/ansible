@@ -12,6 +12,43 @@
   ignore_errors: yes
 
 
+- name: Install Metallb
+  become: no
+  shell: "kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.14.8/config/manifests/metallb-native.yaml"
+
+- name: Create metallb.yaml on host
+  file:
+      path: "metallb.yaml"
+      state: touch
+
+- name: metallb.yaml add block of lines
+  blockinfile:
+    path: metallb.yaml  
+    state: present
+    block: |
+      apiVersion: metallb.io/v1beta1
+      kind: IPAddressPool
+      metadata:
+        creationTimestamp: null
+        name: default
+        namespace: metallb-system
+      spec:
+        addresses:
+        - {{ vardata.metallb }}
+      status: {}
+      ---
+      apiVersion: metallb.io/v1beta1
+      kind: L2Advertisement
+      metadata:
+        creationTimestamp: null
+        name: l2advertisement1
+        namespace: metallb-system
+      spec:
+        ipAddressPools:
+        - default
+      status: {}
+      ---
+
 
 - name: Install Metallb config yaml
   become: yes
