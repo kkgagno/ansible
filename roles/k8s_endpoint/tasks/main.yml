@@ -5,7 +5,7 @@
     name: vardata
 
 - name: Check if nginx is running
-  shell: "ps-ef |grep nginx"
+  shell: "ps -ef |grep nginx"
   register: running_process
   ignore_errors: yes
   #failed_when: running_process.rc < 1
