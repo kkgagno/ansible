@@ -203,7 +203,7 @@ $("#svg").ready(function () {
 <!-- play_316fcb73 -->
 <g id="play_316fcb73" class="node">
 <title>play_316fcb73</title>
-<g id="a_play_316fcb73"><a xlink:href="/home/keith/fuckyou/ansible/k8s_endpoint.yaml" xlink:title="nginx">
+<g id="a_play_316fcb73"><a xlink:href="k8s_endpoint.yaml" xlink:title="nginx">
 <polygon fill="#12bc10" stroke="#12bc10" points="514.98,-316.93 371.98,-316.93 371.98,-280.93 514.98,-280.93 514.98,-316.93"/>
 <text text-anchor="middle" x="443.48" y="-295.23" font-family="Times,serif" font-size="14.00" fill="#ffffff">Play: endpoint (1)</text>
 </a>
