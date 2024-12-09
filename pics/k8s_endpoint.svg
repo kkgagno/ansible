@@ -194,7 +194,7 @@ $("#svg").ready(function () {
 <!-- playbook_e90325bf -->
 <g id="playbook_e90325bf" class="node">
 <title>playbook_e90325bf</title>
-<g id="a_playbook_e90325bf"><a xlink:href="/home/keith/fuckyou/ansible/k8s_endpoint.yaml" xlink:title="k8s_endpoint.yaml">
+<g id="a_playbook_e90325bf"><a xlink:href="https://raw.githubusercontent.com/kkgagno/ansible/a8bbcb9dfef472bf744f8cf84a8a3e72406f4965/pics/ansible/k8s_endpoint.yaml" xlink:title="k8s_endpoint.yaml">
 <ellipse fill="none" stroke="black" stroke-dasharray="1,5" cx="97.49" cy="-298.93" rx="97.48" ry="18"/>
 <text text-anchor="middle" x="97.49" y="-295.23" font-family="Times,serif" font-size="14.00">k8s_endpoint.yaml</text>
 </a>
@@ -203,7 +203,7 @@ $("#svg").ready(function () {
 <!-- play_316fcb73 -->
 <g id="play_316fcb73" class="node">
 <title>play_316fcb73</title>
-<g id="a_play_316fcb73"><a xlink:href="/home/keith/fuckyou/ansible/k8s_endpoint.yaml" xlink:title="nginx">
+<g id="a_play_316fcb73"><a xlink:href="https://raw.githubusercontent.com/kkgagno/ansible/a8bbcb9dfef472bf744f8cf84a8a3e72406f4965/pics/ansible/k8s_endpoint.yaml" xlink:title="nginx">
 <polygon fill="#12bc10" stroke="#12bc10" points="514.98,-316.93 371.98,-316.93 371.98,-280.93 514.98,-280.93 514.98,-316.93"/>
 <text text-anchor="middle" x="443.48" y="-295.23" font-family="Times,serif" font-size="14.00" fill="#ffffff">Play: endpoint (1)</text>
 </a>
@@ -225,7 +225,7 @@ $("#svg").ready(function () {
 <!-- role_95992822 -->
 <g id="role_95992822" class="node">
 <title>role_95992822</title>
-<g id="a_role_95992822"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_endpoint" xlink:title="k8s_endpoint">
+<g id="a_role_95992822"><a xlink:href="https://raw.githubusercontent.com/kkgagno/ansible/a8bbcb9dfef472bf744f8cf84a8a3e72406f4965/pics/ansible/roles/k8s_endpoint" xlink:title="k8s_endpoint">
 <ellipse fill="#12bc10" stroke="#12bc10" cx="665.07" cy="-298.93" rx="100.18" ry="18"/>
 <text text-anchor="middle" x="665.07" y="-295.23" font-family="Times,serif" font-size="14.00" fill="#ffffff">[role] k8s_endpoint</text>
 </a>
@@ -247,7 +247,7 @@ $("#svg").ready(function () {
 <!-- task_17daa26c -->
 <g id="task_17daa26c" class="node">
 <title>task_17daa26c</title>
-<g id="a_task_17daa26c"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : Import vars">
+<g id="a_task_17daa26c"><a xlink:href="https://raw.githubusercontent.com/kkgagno/ansible/a8bbcb9dfef472bf744f8cf84a8a3e72406f4965/pics/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : Import vars">
 <polygon fill="none" stroke="#12bc10" points="1608.91,-534.47 1608.91,-549.38 1522.77,-559.93 1400.94,-559.93 1314.79,-549.38 1314.79,-534.47 1400.94,-523.93 1522.77,-523.93 1608.91,-534.47"/>
 <text text-anchor="middle" x="1461.85" y="-538.23" font-family="Times,serif" font-size="14.00">k8s_endpoint : Import vars</text>
 </a>
@@ -269,7 +269,7 @@ $("#svg").ready(function () {
 <!-- task_56d697a0 -->
 <g id="task_56d697a0" class="node">
 <title>task_56d697a0</title>
-<g id="a_task_56d697a0"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : Check if nginx is running">
+<g id="a_task_56d697a0"><a xlink:href="https://raw.githubusercontent.com/kkgagno/ansible/a8bbcb9dfef472bf744f8cf84a8a3e72406f4965/pics/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : Check if nginx is running">
 <polygon fill="none" stroke="#12bc10" points="1675.58,-480.47 1675.58,-495.38 1550.38,-505.93 1373.33,-505.93 1248.13,-495.38 1248.13,-480.47 1373.33,-469.93 1550.38,-469.93 1675.58,-480.47"/>
 <text text-anchor="middle" x="1461.85" y="-484.23" font-family="Times,serif" font-size="14.00">k8s_endpoint : Check if nginx is running</text>
 </a>
@@ -291,7 +291,7 @@ $("#svg").ready(function () {
 <!-- task_d2e481a0 -->
 <g id="task_d2e481a0" class="node">
 <title>task_d2e481a0</title>
-<g id="a_task_d2e481a0"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : debug">
+<g id="a_task_d2e481a0"><a xlink:href="https://raw.githubusercontent.com/kkgagno/ansible/a8bbcb9dfef472bf744f8cf84a8a3e72406f4965/pics/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : debug">
 <polygon fill="none" stroke="#12bc10" points="1580.63,-426.47 1580.63,-441.38 1511.05,-451.93 1412.65,-451.93 1343.07,-441.38 1343.07,-426.47 1412.65,-415.93 1511.05,-415.93 1580.63,-426.47"/>
 <text text-anchor="middle" x="1461.85" y="-430.23" font-family="Times,serif" font-size="14.00">k8s_endpoint : debug</text>
 </a>
@@ -313,7 +313,7 @@ $("#svg").ready(function () {
 <!-- task_dd5b1aa1 -->
 <g id="task_dd5b1aa1" class="node">
 <title>task_dd5b1aa1</title>
-<g id="a_task_dd5b1aa1"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : meta">
+<g id="a_task_dd5b1aa1"><a xlink:href="https://raw.githubusercontent.com/kkgagno/ansible/a8bbcb9dfef472bf744f8cf84a8a3e72406f4965/pics/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : meta">
 <polygon fill="none" stroke="#12bc10" points="1574.88,-372.47 1574.88,-387.38 1508.67,-397.93 1415.04,-397.93 1348.83,-387.38 1348.83,-372.47 1415.04,-361.93 1508.67,-361.93 1574.88,-372.47"/>
 <text text-anchor="middle" x="1461.85" y="-376.23" font-family="Times,serif" font-size="14.00">k8s_endpoint : meta</text>
 </a>
@@ -335,7 +335,7 @@ $("#svg").ready(function () {
 <!-- task_0417aaf2 -->
 <g id="task_0417aaf2" class="node">
 <title>task_0417aaf2</title>
-<g id="a_task_0417aaf2"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : time synch...for when restoring from snap">
+<g id="a_task_0417aaf2"><a xlink:href="https://raw.githubusercontent.com/kkgagno/ansible/a8bbcb9dfef472bf744f8cf84a8a3e72406f4965/pics/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : time synch...for when restoring from snap">
 <polygon fill="none" stroke="#12bc10" points="1761.73,-318.47 1761.73,-333.38 1586.07,-343.93 1337.64,-343.93 1161.98,-333.38 1161.98,-318.47 1337.64,-307.93 1586.07,-307.93 1761.73,-318.47"/>
 <text text-anchor="middle" x="1461.85" y="-322.23" font-family="Times,serif" font-size="14.00">k8s_endpoint : time synch...for when restoring from snap</text>
 </a>
@@ -357,7 +357,7 @@ $("#svg").ready(function () {
 <!-- task_0fc01340 -->
 <g id="task_0fc01340" class="node">
 <title>task_0fc01340</title>
-<g id="a_task_0fc01340"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : Install nginx-core">
+<g id="a_task_0fc01340"><a xlink:href="https://raw.githubusercontent.com/kkgagno/ansible/a8bbcb9dfef472bf744f8cf84a8a3e72406f4965/pics/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : Install nginx-core">
 <polygon fill="none" stroke="#12bc10" points="1636.29,-264.47 1636.29,-279.38 1534.1,-289.93 1389.6,-289.93 1287.42,-279.38 1287.42,-264.47 1389.6,-253.93 1534.1,-253.93 1636.29,-264.47"/>
 <text text-anchor="middle" x="1461.85" y="-268.23" font-family="Times,serif" font-size="14.00">k8s_endpoint : Install nginx-core</text>
 </a>
@@ -379,7 +379,7 @@ $("#svg").ready(function () {
 <!-- task_b75aaca9 -->
 <g id="task_b75aaca9" class="node">
 <title>task_b75aaca9</title>
-<g id="a_task_b75aaca9"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : Remove default nginx.conf (delete file)">
+<g id="a_task_b75aaca9"><a xlink:href="https://raw.githubusercontent.com/kkgagno/ansible/a8bbcb9dfef472bf744f8cf84a8a3e72406f4965/pics/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : Remove default nginx.conf (delete file)">
 <polygon fill="none" stroke="#12bc10" points="1744.05,-210.47 1744.05,-225.38 1578.74,-235.93 1344.96,-235.93 1179.65,-225.38 1179.65,-210.47 1344.96,-199.93 1578.74,-199.93 1744.05,-210.47"/>
 <text text-anchor="middle" x="1461.85" y="-214.23" font-family="Times,serif" font-size="14.00">k8s_endpoint : Remove default nginx.conf (delete file)</text>
 </a>
@@ -401,7 +401,7 @@ $("#svg").ready(function () {
 <!-- task_5dafe06b -->
 <g id="task_5dafe06b" class="node">
 <title>task_5dafe06b</title>
-<g id="a_task_5dafe06b"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : Create nginx.conf on host">
+<g id="a_task_5dafe06b"><a xlink:href="https://raw.githubusercontent.com/kkgagno/ansible/a8bbcb9dfef472bf744f8cf84a8a3e72406f4965/pics/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : Create nginx.conf on host">
 <polygon fill="none" stroke="#12bc10" points="1678.7,-156.47 1678.7,-171.38 1551.68,-181.93 1372.03,-181.93 1245,-171.38 1245,-156.47 1372.03,-145.93 1551.68,-145.93 1678.7,-156.47"/>
 <text text-anchor="middle" x="1461.85" y="-160.23" font-family="Times,serif" font-size="14.00">k8s_endpoint : Create nginx.conf on host</text>
 </a>
@@ -423,7 +423,7 @@ $("#svg").ready(function () {
 <!-- task_e88aa2a2 -->
 <g id="task_e88aa2a2" class="node">
 <title>task_e88aa2a2</title>
-<g id="a_task_e88aa2a2"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : nginx.conf add block of lines">
+<g id="a_task_e88aa2a2"><a xlink:href="https://raw.githubusercontent.com/kkgagno/ansible/a8bbcb9dfef472bf744f8cf84a8a3e72406f4965/pics/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : nginx.conf add block of lines">
 <polygon fill="none" stroke="#12bc10" points="1692.84,-102.47 1692.84,-117.38 1557.53,-127.93 1366.17,-127.93 1230.86,-117.38 1230.86,-102.47 1366.17,-91.93 1557.53,-91.93 1692.84,-102.47"/>
 <text text-anchor="middle" x="1461.85" y="-106.23" font-family="Times,serif" font-size="14.00">k8s_endpoint : nginx.conf add block of lines</text>
 </a>
@@ -445,7 +445,7 @@ $("#svg").ready(function () {
 <!-- task_0b832e49 -->
 <g id="task_0b832e49" class="node">
 <title>task_0b832e49</title>
-<g id="a_task_0b832e49"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : Restart nginx with new config file">
+<g id="a_task_0b832e49"><a xlink:href="https://raw.githubusercontent.com/kkgagno/ansible/a8bbcb9dfef472bf744f8cf84a8a3e72406f4965/pics/ansible/roles/k8s_endpoint/tasks/main.yml" xlink:title="k8s_endpoint : Restart nginx with new config file">
 <polygon fill="none" stroke="#12bc10" points="1718.4,-48.47 1718.4,-63.38 1568.12,-73.93 1355.59,-73.93 1205.3,-63.38 1205.3,-48.47 1355.59,-37.93 1568.12,-37.93 1718.4,-48.47"/>
 <text text-anchor="middle" x="1461.85" y="-52.23" font-family="Times,serif" font-size="14.00">k8s_endpoint : Restart nginx with new config file</text>
 </a>
