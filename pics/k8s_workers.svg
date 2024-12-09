@@ -194,7 +194,7 @@ $("#svg").ready(function () {
 <!-- playbook_ece56419 -->
 <g id="playbook_ece56419" class="node">
 <title>playbook_ece56419</title>
-<g id="a_playbook_ece56419"><a xlink:href="k8s_workers.yaml" xlink:title="k8s_workers.yaml">
+<g id="a_playbook_ece56419"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/k8s_workers.yaml" xlink:title="k8s_workers.yaml">
 <ellipse fill="none" stroke="black" stroke-dasharray="1,5" cx="94.24" cy="-495.09" rx="94.48" ry="18"/>
 <text text-anchor="middle" x="94.24" y="-491.39" font-family="Times,serif" font-size="14.00">k8s_workers.yaml</text>
 </a>
