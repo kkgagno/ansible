@@ -203,7 +203,7 @@ $("#svg").ready(function () {
 <!-- play_bb318726 -->
 <g id="play_bb318726" class="node">
 <title>play_bb318726</title>
-<g id="a_play_bb318726"><a xlink:href="/home/keith/fuckyou/ansible/k8s_workers.yaml" xlink:title="wrkr1,wrkr2,wrkr3">
+<g id="a_play_bb318726"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/k8s_workers.yaml" xlink:title="wrkr1,wrkr2,wrkr3">
 <polygon fill="#9c1fad" stroke="#9c1fad" points="498.48,-513.09 360.48,-513.09 360.48,-477.09 498.48,-477.09 498.48,-513.09"/>
 <text text-anchor="middle" x="429.48" y="-491.39" font-family="Times,serif" font-size="14.00" fill="#ffffff">Play: workers (3)</text>
 </a>
@@ -225,7 +225,7 @@ $("#svg").ready(function () {
 <!-- role_636ada78 -->
 <g id="role_636ada78" class="node">
 <title>role_636ada78</title>
-<g id="a_role_636ada78"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers" xlink:title="k8s_workers">
+<g id="a_role_636ada78"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers" xlink:title="k8s_workers">
 <ellipse fill="#9c1fad" stroke="#9c1fad" cx="645.32" cy="-495.09" rx="96.68" ry="18"/>
 <text text-anchor="middle" x="645.32" y="-491.39" font-family="Times,serif" font-size="14.00" fill="#ffffff">[role] k8s_workers</text>
 </a>
@@ -247,7 +247,7 @@ $("#svg").ready(function () {
 <!-- task_2d265b37 -->
 <g id="task_2d265b37" class="node">
 <title>task_2d265b37</title>
-<g id="a_task_2d265b37"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : Check if kubelet is running">
+<g id="a_task_2d265b37"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : Check if kubelet is running">
 <polygon fill="none" stroke="#9c1fad" points="1618.23,-919.64 1618.23,-934.55 1489.67,-945.09 1307.84,-945.09 1179.28,-934.55 1179.28,-919.64 1307.84,-909.09 1489.67,-909.09 1618.23,-919.64"/>
 <text text-anchor="middle" x="1398.75" y="-923.39" font-family="Times,serif" font-size="14.00">k8s_workers : Check if kubelet is running</text>
 </a>
@@ -269,7 +269,7 @@ $("#svg").ready(function () {
 <!-- task_24983f6d -->
 <g id="task_24983f6d" class="node">
 <title>task_24983f6d</title>
-<g id="a_task_24983f6d"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : debug">
+<g id="a_task_24983f6d"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : debug">
 <polygon fill="none" stroke="#9c1fad" points="1514,-865.64 1514,-880.55 1446.49,-891.09 1351.02,-891.09 1283.51,-880.55 1283.51,-865.64 1351.02,-855.09 1446.49,-855.09 1514,-865.64"/>
 <text text-anchor="middle" x="1398.75" y="-869.39" font-family="Times,serif" font-size="14.00">k8s_workers : debug</text>
 </a>
@@ -291,7 +291,7 @@ $("#svg").ready(function () {
 <!-- task_d3f00352 -->
 <g id="task_d3f00352" class="node">
 <title>task_d3f00352</title>
-<g id="a_task_d3f00352"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : meta">
+<g id="a_task_d3f00352"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : meta">
 <polygon fill="none" stroke="#9c1fad" points="1507.84,-811.64 1507.84,-826.55 1443.94,-837.09 1353.57,-837.09 1289.67,-826.55 1289.67,-811.64 1353.57,-801.09 1443.94,-801.09 1507.84,-811.64"/>
 <text text-anchor="middle" x="1398.75" y="-815.39" font-family="Times,serif" font-size="14.00">k8s_workers : meta</text>
 </a>
@@ -313,7 +313,7 @@ $("#svg").ready(function () {
 <!-- task_69954ca1 -->
 <g id="task_69954ca1" class="node">
 <title>task_69954ca1</title>
-<g id="a_task_69954ca1"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : Load join command">
+<g id="a_task_69954ca1"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : Load join command">
 <polygon fill="none" stroke="#9c1fad" points="1580.26,-757.64 1580.26,-772.55 1473.94,-783.09 1323.57,-783.09 1217.25,-772.55 1217.25,-757.64 1323.57,-747.09 1473.94,-747.09 1580.26,-757.64"/>
 <text text-anchor="middle" x="1398.75" y="-761.39" font-family="Times,serif" font-size="14.00">k8s_workers : Load join command</text>
 </a>
@@ -335,7 +335,7 @@ $("#svg").ready(function () {
 <!-- task_33c76a1b -->
 <g id="task_33c76a1b" class="node">
 <title>task_33c76a1b</title>
-<g id="a_task_33c76a1b"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : set_fact">
+<g id="a_task_33c76a1b"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : set_fact">
 <polygon fill="none" stroke="#9c1fad" points="1521.98,-703.64 1521.98,-718.55 1449.8,-729.09 1347.71,-729.09 1275.53,-718.55 1275.53,-703.64 1347.71,-693.09 1449.8,-693.09 1521.98,-703.64"/>
 <text text-anchor="middle" x="1398.75" y="-707.39" font-family="Times,serif" font-size="14.00">k8s_workers : set_fact</text>
 </a>
@@ -357,7 +357,7 @@ $("#svg").ready(function () {
 <!-- task_87041021 -->
 <g id="task_87041021" class="node">
 <title>task_87041021</title>
-<g id="a_task_87041021"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : debug">
+<g id="a_task_87041021"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : debug">
 <polygon fill="none" stroke="#9c1fad" points="1514,-649.64 1514,-664.55 1446.49,-675.09 1351.02,-675.09 1283.51,-664.55 1283.51,-649.64 1351.02,-639.09 1446.49,-639.09 1514,-649.64"/>
 <text text-anchor="middle" x="1398.75" y="-653.39" font-family="Times,serif" font-size="14.00">k8s_workers : debug</text>
 </a>
@@ -379,7 +379,7 @@ $("#svg").ready(function () {
 <!-- task_b388691f -->
 <g id="task_b388691f" class="node">
 <title>task_b388691f</title>
-<g id="a_task_b388691f"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : Add to cluster">
+<g id="a_task_b388691f"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : Add to cluster">
 <polygon fill="none" stroke="#9c1fad" points="1553.29,-595.64 1553.29,-610.55 1462.77,-621.09 1334.74,-621.09 1244.22,-610.55 1244.22,-595.64 1334.74,-585.09 1462.77,-585.09 1553.29,-595.64"/>
 <text text-anchor="middle" x="1398.75" y="-599.39" font-family="Times,serif" font-size="14.00">k8s_workers : Add to cluster</text>
 </a>
@@ -401,7 +401,7 @@ $("#svg").ready(function () {
 <!-- task_b437a0b0 -->
 <g id="task_b437a0b0" class="node">
 <title>task_b437a0b0</title>
-<g id="a_task_b437a0b0"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : set_fact">
+<g id="a_task_b437a0b0"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : set_fact">
 <polygon fill="none" stroke="#9c1fad" points="1521.98,-541.64 1521.98,-556.55 1449.8,-567.09 1347.71,-567.09 1275.53,-556.55 1275.53,-541.64 1347.71,-531.09 1449.8,-531.09 1521.98,-541.64"/>
 <text text-anchor="middle" x="1398.75" y="-545.39" font-family="Times,serif" font-size="14.00">k8s_workers : set_fact</text>
 </a>
@@ -423,7 +423,7 @@ $("#svg").ready(function () {
 <!-- task_d9166567 -->
 <g id="task_d9166567" class="node">
 <title>task_d9166567</title>
-<g id="a_task_d9166567"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : debug">
+<g id="a_task_d9166567"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : debug">
 <polygon fill="none" stroke="#9c1fad" points="1514,-487.64 1514,-502.55 1446.49,-513.09 1351.02,-513.09 1283.51,-502.55 1283.51,-487.64 1351.02,-477.09 1446.49,-477.09 1514,-487.64"/>
 <text text-anchor="middle" x="1398.75" y="-491.39" font-family="Times,serif" font-size="14.00">k8s_workers : debug</text>
 </a>
@@ -445,7 +445,7 @@ $("#svg").ready(function () {
 <!-- task_a0f536ca -->
 <g id="task_a0f536ca" class="node">
 <title>task_a0f536ca</title>
-<g id="a_task_a0f536ca"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : Load kubecfg">
+<g id="a_task_a0f536ca"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : Load kubecfg">
 <polygon fill="none" stroke="#9c1fad" points="1549.76,-433.64 1549.76,-448.55 1461.3,-459.09 1336.21,-459.09 1247.75,-448.55 1247.75,-433.64 1336.21,-423.09 1461.3,-423.09 1549.76,-433.64"/>
 <text text-anchor="middle" x="1398.75" y="-437.39" font-family="Times,serif" font-size="14.00">k8s_workers : Load kubecfg</text>
 </a>
@@ -467,7 +467,7 @@ $("#svg").ready(function () {
 <!-- task_40743795 -->
 <g id="task_40743795" class="node">
 <title>task_40743795</title>
-<g id="a_task_40743795"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : set_fact">
+<g id="a_task_40743795"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : set_fact">
 <polygon fill="none" stroke="#9c1fad" points="1521.98,-379.64 1521.98,-394.55 1449.8,-405.09 1347.71,-405.09 1275.53,-394.55 1275.53,-379.64 1347.71,-369.09 1449.8,-369.09 1521.98,-379.64"/>
 <text text-anchor="middle" x="1398.75" y="-383.39" font-family="Times,serif" font-size="14.00">k8s_workers : set_fact</text>
 </a>
@@ -489,7 +489,7 @@ $("#svg").ready(function () {
 <!-- task_faf98f77 -->
 <g id="task_faf98f77" class="node">
 <title>task_faf98f77</title>
-<g id="a_task_faf98f77"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : debug">
+<g id="a_task_faf98f77"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : debug">
 <polygon fill="none" stroke="#9c1fad" points="1514,-325.64 1514,-340.55 1446.49,-351.09 1351.02,-351.09 1283.51,-340.55 1283.51,-325.64 1351.02,-315.09 1446.49,-315.09 1514,-325.64"/>
 <text text-anchor="middle" x="1398.75" y="-329.39" font-family="Times,serif" font-size="14.00">k8s_workers : debug</text>
 </a>
@@ -511,7 +511,7 @@ $("#svg").ready(function () {
 <!-- task_d352e4e0 -->
 <g id="task_d352e4e0" class="node">
 <title>task_d352e4e0</title>
-<g id="a_task_d352e4e0"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : Set up kubectl for the current user">
+<g id="a_task_d352e4e0"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : Set up kubectl for the current user">
 <polygon fill="none" stroke="#9c1fad" points="1658.43,-271.64 1658.43,-286.55 1506.32,-297.09 1291.19,-297.09 1139.08,-286.55 1139.08,-271.64 1291.19,-261.09 1506.32,-261.09 1658.43,-271.64"/>
 <text text-anchor="middle" x="1398.75" y="-275.39" font-family="Times,serif" font-size="14.00">k8s_workers : Set up kubectl for the current user</text>
 </a>
@@ -533,7 +533,7 @@ $("#svg").ready(function () {
 <!-- task_475cbf63 -->
 <g id="task_475cbf63" class="node">
 <title>task_475cbf63</title>
-<g id="a_task_475cbf63"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : kubecfg create local file">
+<g id="a_task_475cbf63"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : kubecfg create local file">
 <polygon fill="none" stroke="#9c1fad" points="1601.87,-217.64 1601.87,-232.55 1482.89,-243.09 1314.62,-243.09 1195.64,-232.55 1195.64,-217.64 1314.62,-207.09 1482.89,-207.09 1601.87,-217.64"/>
 <text text-anchor="middle" x="1398.75" y="-221.39" font-family="Times,serif" font-size="14.00">k8s_workers : kubecfg create local file</text>
 </a>
@@ -555,7 +555,7 @@ $("#svg").ready(function () {
 <!-- task_4dfa01ff -->
 <g id="task_4dfa01ff" class="node">
 <title>task_4dfa01ff</title>
-<g id="a_task_4dfa01ff"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : add master kubeconfig local">
+<g id="a_task_4dfa01ff"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : add master kubeconfig local">
 <polygon fill="none" stroke="#9c1fad" points="1623.99,-163.64 1623.99,-178.55 1492.05,-189.09 1305.46,-189.09 1173.52,-178.55 1173.52,-163.64 1305.46,-153.09 1492.05,-153.09 1623.99,-163.64"/>
 <text text-anchor="middle" x="1398.75" y="-167.39" font-family="Times,serif" font-size="14.00">k8s_workers : add master kubeconfig local</text>
 </a>
@@ -577,7 +577,7 @@ $("#svg").ready(function () {
 <!-- task_b6afdde6 -->
 <g id="task_b6afdde6" class="node">
 <title>task_b6afdde6</title>
-<g id="a_task_b6afdde6"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : Set up kubectl for the root user">
+<g id="a_task_b6afdde6"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : Set up kubectl for the root user">
 <polygon fill="none" stroke="#9c1fad" points="1641.66,-109.64 1641.66,-124.55 1499.37,-135.09 1298.14,-135.09 1155.84,-124.55 1155.84,-109.64 1298.14,-99.09 1499.37,-99.09 1641.66,-109.64"/>
 <text text-anchor="middle" x="1398.75" y="-113.39" font-family="Times,serif" font-size="14.00">k8s_workers : Set up kubectl for the root user</text>
 </a>
@@ -599,7 +599,7 @@ $("#svg").ready(function () {
 <!-- task_fa1ed74c -->
 <g id="task_fa1ed74c" class="node">
 <title>task_fa1ed74c</title>
-<g id="a_task_fa1ed74c"><a xlink:href="/home/keith/fuckyou/ansible/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : add master kubeconfig local root">
+<g id="a_task_fa1ed74c"><a xlink:href="https://github.com/kkgagno/ansible/blob/main/roles/k8s_workers/tasks/main.yml" xlink:title="k8s_workers : add master kubeconfig local root">
 <polygon fill="none" stroke="#9c1fad" points="1646.92,-55.64 1646.92,-70.55 1501.55,-81.09 1295.96,-81.09 1150.59,-70.55 1150.59,-55.64 1295.96,-45.09 1501.55,-45.09 1646.92,-55.64"/>
 <text text-anchor="middle" x="1398.75" y="-59.39" font-family="Times,serif" font-size="14.00">k8s_workers : add master kubeconfig local root</text>
 </a>
