@@ -246,3 +246,8 @@
   when: warn_count != 0
   tags:
       - always
+
+- name: Create file to check for checking if CIS applied
+  file:
+      path: "/etc/cis-locked"
+      state: touch
