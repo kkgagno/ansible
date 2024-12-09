@@ -15,10 +15,6 @@
       - set_reboot_required
   when: update_audit_template
 
-- name: Create file to check if CIS applied
-  file:
-      path: "/etc/cis-locked"
-      state: touch
 
 - name: POST | Set up auditd user logging exceptions
   ansible.builtin.template:
