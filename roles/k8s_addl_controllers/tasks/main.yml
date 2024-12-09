@@ -11,6 +11,13 @@
   when: running_process.stdout_lines|length > 0
   ignore_errors: yes
 
+- name: time synch...for when restoring from snap
+  become: yes
+  shell: "{{ item }}"
+  with_items:    
+    - "date -s \"$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z\""
+  register: command_output
+
 - name: Load join command
   delegate_to: localhost
   command: cat /etc/ctrljoincluster

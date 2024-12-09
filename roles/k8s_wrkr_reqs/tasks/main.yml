@@ -16,7 +16,13 @@
           msg: "kubelet not running"
         ignore_errors: "{{ ignore_flag | default(false) | bool }}"
   
-
+- name: time synch...for when restoring from snap
+  become: yes
+  shell: "{{ item }}"
+  with_items:    
+    - "date -s \"$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z\""
+  register: command_output
+  
 - name: Install ContainerD
   apt:
     name:  containerd
