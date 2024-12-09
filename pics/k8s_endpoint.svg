@@ -194,7 +194,7 @@ $("#svg").ready(function () {
 <!-- playbook_e90325bf -->
 <g id="playbook_e90325bf" class="node">
 <title>playbook_e90325bf</title>
-<g id="a_playbook_e90325bf"><a xlink:href="k8s_endpoint.yaml" xlink:title="k8s_endpoint.yaml">
+<g id="a_playbook_e90325bf"><a xlink:href="/home/keith/fuckyou/ansible/k8s_endpoint.yaml" xlink:title="k8s_endpoint.yaml">
 <ellipse fill="none" stroke="black" stroke-dasharray="1,5" cx="97.49" cy="-298.93" rx="97.48" ry="18"/>
 <text text-anchor="middle" x="97.49" y="-295.23" font-family="Times,serif" font-size="14.00">k8s_endpoint.yaml</text>
 </a>
@@ -203,7 +203,7 @@ $("#svg").ready(function () {
 <!-- play_316fcb73 -->
 <g id="play_316fcb73" class="node">
 <title>play_316fcb73</title>
-<g id="a_play_316fcb73"><a xlink:href="k8s_endpoint.yaml" xlink:title="nginx">
+<g id="a_play_316fcb73"><a xlink:href="/home/keith/fuckyou/ansible/k8s_endpoint.yaml" xlink:title="nginx">
 <polygon fill="#12bc10" stroke="#12bc10" points="514.98,-316.93 371.98,-316.93 371.98,-280.93 514.98,-280.93 514.98,-316.93"/>
 <text text-anchor="middle" x="443.48" y="-295.23" font-family="Times,serif" font-size="14.00" fill="#ffffff">Play: endpoint (1)</text>
 </a>
