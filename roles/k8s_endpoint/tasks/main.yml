@@ -4,6 +4,7 @@
     file: k8svars.yml
     name: vardata
 
+
 - name: Check if nginx is running
   shell: "ps cax |grep nginx"
   register: running_process
@@ -16,7 +17,15 @@
 - meta: end_host
   when: running_process.stdout_lines|length > 0
   ignore_errors: yes
-  
+
+- name: time synch...for when restoring from snap
+  become: yes
+  shell: "{{ item }}"
+  with_items:    
+    - "date -s \"$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z\""
+  register: command_output
+
+#date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z"
 
 - name: Install nginx-core
   apt:
