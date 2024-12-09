@@ -11,6 +11,12 @@
   when: running_process.stdout_lines|length > 0
   ignore_errors: yes
 
+- name: Restart kubedns and wait, cis settings crash dns pods
+  become: yes
+  shell: "{{ item }}"
+  with_items: 
+    - "kubectl rollout restart deployment coredns -n kube-system"
+    - "kubectl wait --for=condition=Ready pods --all -n kube-system --timeout 480s"   
 
 - name: Install Metallb
   become: no
@@ -53,7 +59,7 @@
 - name: Install Metallb config yaml
   become: yes
   shell: "{{ item }}"
-  with_items:    
+  with_items: 
     - "kubectl wait --for=condition=Ready pods --all -n metallb-system --timeout 480s"
     - "kubectl apply -f metallb.yaml"
 
