@@ -81,11 +81,6 @@
     src: $HOME/linux-amd64/
     dest: /usr/local/bin/
 
-- name: Add Helm repository into sources list
-  ansible.builtin.apt_repository:
-    repo: deb http://archive.canonical.com/ubuntu
-    state: present
-
 - name: Add traefik repo, create traefik namespace, and install traefik
   become: yes
   command: "{{ item }}"
