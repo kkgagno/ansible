@@ -59,6 +59,44 @@
       - "{{ cilium.stdout }}"
 
 
+- name: Download Helm
+  ansible.builtin.get_url:
+    url: https://get.helm.sh/helm-v3.16.3-linux-amd64.tar.gz
+    dest: /etc/helm-v3.16.3-linux-amd64.tar.gz
+    mode: '0440'
+
+- name: Extract helm.gz 
+  ansible.builtin.unarchive:
+    src: /etc/helm-v3.16.3-linux-amd64.tar.gz
+    dest: $HOME/
+    remote_src: yes
+
+- name: Remove helm tar file (delete file)
+  ansible.builtin.file:
+    path: /etc/helm-v3.16.3-linux-amd64.tar.gz
+    state: absent
+
+- name: Copy file with owner and permissions
+  ansible.builtin.copy:
+    src: $HOME/linux-amd64/
+    dest: /usr/local/bin/
+
+- name: Add Helm repository into sources list
+  ansible.builtin.apt_repository:
+    repo: deb http://archive.canonical.com/ubuntu
+    state: present
+
+- name: Add traefik repo, create traefik namespace, and install traefik
+  become: yes
+  command: "{{ item }}"
+  with_items:
+      - "helm repo add traefik https://traefik.github.io/charts"
+      - "helm repo update"
+      - "kubectl create ns traefik-v2"
+      - "helm install -n traefik-v2 traefik traefik/traefik"
+
+
+
 #- name: Install Calico network plugin
 #  become: no
 #  shell: "kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml"
