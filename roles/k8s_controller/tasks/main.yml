@@ -80,6 +80,7 @@
   ansible.builtin.copy:
     src: $HOME/linux-amd64/
     dest: /usr/local/bin/
+    remote_src: yes
 
 - name: Add traefik repo, create traefik namespace, and install traefik
   become: yes
