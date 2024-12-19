@@ -17,7 +17,8 @@
   with_items: 
     - "kubectl rollout restart deployment coredns -n kube-system"
     - "kubectl wait --for=condition=Ready pods --all -n kube-system --timeout 480s"   
-
+  ignore_errors: yes
+  
 - name: Install Metallb
   become: no
   shell: "kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.14.8/config/manifests/metallb-native.yaml"
@@ -51,7 +52,7 @@
         namespace: metallb-system
       spec:
         ipAddressPools:
-        - default
+        - default       
       status: {}
       ---
 
